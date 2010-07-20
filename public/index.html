@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>GeoIP lookup</title>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+	
+		<header>
+
+			<h1>GeoIP lookup</h1>
+			<p>GeoIP city &amp; country lookup using <a href="http://www.maxmind.com/app/geolitecity">MaxMinds free geolocation database</a> and <a href="http://sinatrarb.com/">Sinatra</a>.</p>
+		</header>
+
+		<section>
+			<h2>Usage</h2>
+
+			<h3>Query</h3>
+
+			<code>GET</code> <code>/domain.tld</code>
+			<ul>
+				<li>Returns HTML</li>
+				<li>Try it: <a href="http://geoip.api.enemy.fi/google.com">http://geoip.api.enemy.fi/google.com</a></li>
+			</ul>
+
+			<code>GET</code> <code>/domain.tld.json</code>
+			<ul>
+				<li>Returns JSON</li>
+				<li>Try it: <a href="http://geoip.api.enemy.fi/google.com.json">http://geoip.api.enemy.fi/google.com.json</a></li>
+			</ul>
+
+		</section>
+
+
+		<section>
+			<h2>Source code</h2>
+
+			<p>Source code is available at Github: <a href="http://github.com/enemy/geoip">http://github.com/enemy/geoip</a>.</p>
+		</section>
+
+		<footer>
+		</footer>
+
+	</body>
+
+</html>

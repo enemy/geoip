@@ -1,0 +1,44 @@
+%html
+	%head
+	%body
+	
+	%h1= @resolved[:hostname]
+	
+	%table
+		%tr
+			%td ip
+			%td= @resolved[:ip]
+		%tr
+			%td Country code alpha-2
+			%td= @resolved[:cc_alpha2]
+		%tr
+			%td Country code alpha-3
+			%td= @resolved[:cc_alpha3]
+		%tr
+			%td Country name
+			%td= @resolved[:country_name]
+		%tr
+			%td Continent
+			%td= @resolved[:continent]
+		%tr
+			%td State
+			%td= @resolved[:state]
+		%tr
+			%td City
+			%td= @resolved[:city]
+		%tr
+			%td Zipcode
+			%td= @resolved[:zipcode]
+		%tr
+			%td Latitude
+			%td= @resolved[:latitude]
+		%tr
+			%td Longitude
+			%td= @resolved[:longitude]
+		- if @resolved[:dma_code]
+			%tr
+				%td DMA code
+				%td= @resolved[:dma_code]
+			%tr
+				%td Area code
+				%td= @resolved[:area_code]
